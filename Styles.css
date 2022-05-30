@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+form {
+    width: 500px;
+    height: 500px;
+    border-radius: 1px;
+    border-color: rgb(221, 144, 1);
+    border-style: dashed;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.FNLN,.email, textarea, #checkBox {
+    padding-bottom: 5px;
+
+}
+.FNLN {
+    margin-left: 25px;
+}
+#emailInput {
+    margin-left: 25px;
+    width: 290px;
+
+}
+textarea {
+    margin-left: 25px;
+    width: 290px; 
+}
+#checkBox {
+    margin-left: 75px;
+
+}
+button {
+    margin-left: 65px;
+    width: 50%;
+    border-radius: 5px;
+}
+.button {
+    padding-top: 5px;
+
+}
+
