@@ -1,47 +1,112 @@
-body {
-    display: flex;
-    justify-content: center;
-    background-color: #f2f2f2;
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
 }
-form {
-    width: 500px;
-    height: 500px;
-    border-radius: 1px;
-    border-color: rgb(221, 144, 1);
-    border-style: dashed;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.main-image {
+    float: left;
+    width: 350px;
+    height: 725px;
+    margin-left: 240px;   
+    position: absolute;
+}
+.title-photo-box {
+    display: flex;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 125px;
+    height: 100px;
+    width: 350px;
+    background-color: rgba(22, 22, 22, 0.5);
+    justify-content: center;
+    align-items: center;
+    
 }
 h1 {
     display: flex;
-    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.FNLN,.email, textarea, #checkBox {
-    padding-bottom: 5px;
+.info {
+    float: right;
+    --margin:0px;
+    --header: 225px;
+    --footer: 225px;
+    --padding:30px;
+    --main: calc(700px - calc(var(--footer) + (var(--header))));
+    margin-right: 250px;  
+    width: 600px; 
+}
+.top-box {
+    background-color: rgb(226, 225, 225);
+    height: var(--header);
+    padding-left:var(--padding);
+}
+.text-body{
+    padding-top: 80px;
+    font-size: 20px;
+    font-weight:bolder;
+}
+.text-sub-heading {
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.middle-box {
+    background-color: rgb(240, 240, 240);
+    height: var(--main);
+    padding-left:var(--padding);
+    box-shadow:  5px 5px rgb(0 0 0 / 12%)}
+.middle-box-subheading {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
 
 }
-.FNLN {
-    margin-left: 25px;
+.bottom-box {
+    background-color: rgb(226, 225, 225);
+    height: var(--footer);
+    padding-left:var(--padding);
+    padding-top: 25px;
 }
-#emailInput {
-    margin-left: 25px;
-    width: 290px;
-
+.top-boxes, .button-box {
+    margin: var(--margin);
 }
-textarea {
-    margin-left: 25px;
-    width: 290px; 
+.top-boxes, .middle-boxes, .bottom-boxes, .button-box {
+    padding: 0px;
 }
-#checkBox {
-    margin-left: 75px;
-
+label {
+    display: block;
+}
+.top-boxes, .middle-boxes, .bottom-boxes {
+    display: flex;
+    gap: 40px;
+    width: 50px;
+    font-weight: bold;
 }
 button {
-    margin-left: 65px;
-    width: 50%;
     border-radius: 5px;
+    border: none;
+    width: 160px;
+    height: 35px;
+    background-color: rgb(59, 85, 34);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
-.button {
-    padding-top: 5px;
+button:hover{
+    background-color: rgb(44, 63, 26);
+}
+.login {
+    padding-top: 25px;
+}
+.login-link {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
 
 }
-
